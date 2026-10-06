@@ -5,8 +5,8 @@ export const PAPER_SIZES = Object.freeze({
   LETTER: 'LETTER',
 });
 
-export const COLOR_MODES = Object.freeze({
-  BW: 'BW', // Black & White
+export const PRINT_TYPES = Object.freeze({
+  BLACK_WHITE: 'BLACK_WHITE',
   COLOR: 'COLOR',
 });
 
@@ -21,4 +21,15 @@ export const PAGE_SELECTION_TYPES = Object.freeze({
   CUSTOM: 'CUSTOM',   // e.g., "1,3,7"
   ODD: 'ODD',         // Odd pages only
   EVEN: 'EVEN',       // Even pages only
+});
+
+export const DEFAULT_PRICING_CONFIG = Object.freeze({
+  A4: {
+    BLACK_WHITE: { single: 2.0, double: 3.0 },
+    COLOR: { single: 10.0, double: 18.0 },
+  },
+  A3: {
+    BLACK_WHITE: { single: 5.0, double: 8.0 },
+    COLOR: { single: 20.0, double: 35.0 },
+  },
 });
